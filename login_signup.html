@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdth=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla-Ma</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/stylelog.css">
+    <link rel="stylesheet" href="dist/sweetalert2.min.css">
+    <script src="dist/sweetalert2.all.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="btn">
+        <form action="" class="form">   
+        <h2 id="title">login</h2>
+            <div class="input" id="name">
+                <i class="fa fa-user"></i>
+                    <input type="text" placeholder="full name" required>
+            </div>
+            <div class="input">
+                <i class="fa fa-envelope"></i>
+                <input type="email" placeholder="email" id="email">
+            </div>
+            <div class="input">
+                <i class="fa fa-lock"></i>
+                <input type="password" id="password" placeholder="password">
+            </div>
+            <button type="submit" id="btn" onclick="validate()">Login</button>
+            <a href="#" id="a">forgot your password ?</a>
+            <br>
+            <br>
+            <p>___________or___________</p>
+             <br>
+            <a id="log" onclick="login()">Login</a>
+            <a id="sig" onclick="signup()">Sign up</a>
+            <br>
+            <div class="social" id="social">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <br>
+            <a href="index.html"><h4>Tesla Ma</h4></a>
+        </form>
+    </div>
+</body>
+</html>

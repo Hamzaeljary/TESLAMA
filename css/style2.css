@@ -1,0 +1,496 @@
+*{
+    font-family: sans-serif;
+    list-style-type: none;
+    text-decoration-line: none;
+    box-sizing: border-box; 
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* --------------header------------------ */
+header{
+     position: fixed;
+     width: 100%;
+     top:0;
+     right: 0;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background:white; 
+     padding: 0px 30px;
+     font-style: normal;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo img{
+    width: 100px;
+} 
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px ;
+    color: black;
+    font-weight: 500;
+}
+.navbar a:hover{
+    border-bottom: 4px solid orange;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.header img{
+      padding: 10px 30px;
+      color:black;
+      width: 110px;
+      border-radius: 50%;
+      
+}
+/* --------------HOME------------------ */
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(247, 20, 24, 0.713), rgba(0, 0, 0, 0.7)), url(../img/TESLA.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,0.5fr);
+    margin: 0;
+}
+.home .text{
+    text-align: center;
+    padding-left: 10%;
+}
+.text h1{
+    font-size: 3.5rem;
+    color: orange;
+    text-align: center;
+}
+.text h1 span{
+    color:white;
+    font-size: 8rem;
+
+}
+.text h1 .tesla{
+    color:white;
+    letter-spacing:0rem ;
+
+}
+
+.form-container form{
+    display: flex;
+    flex-wrap:  wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 8rem;
+    border: 9px solid orange;
+    padding: 20px;
+    border-radius: 0.5rem;
+    color: white;
+}
+.input-box{
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-box span{
+    font-weight: 500;
+}
+.input-box input{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: rgb(213, 207, 182);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.form-container form .btn{
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.form-container form .btn:hover{
+    background: black;
+    color: white;
+}
+
+/* --------------heading------------------ */
+
+.heading{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.heading span{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1rem;
+} 
+.heading h4{
+    padding-top: 2rem;
+    color: blue;
+    font-size: 1rem;
+    font-weight: 800;
+}
+/* --------------ride------------------ */
+.ride-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap:1rem;
+    margin-top: 10rem;
+}
+.ride-container .box{
+    text-align: center;
+    padding: 20px;
+}
+.ride-container .box .fas{
+    font-size: 34px;
+    padding: 10px;
+    background: white;
+    border-radius: 0.5rem;
+    color:rgb(179, 91, 10);
+}
+.ride-container .box h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.4rem 0 0.5rem;
+}
+.ride-container .box .fas:hover,
+.ride-container .box .fa-calendar-check{
+    background: rgb(9, 107, 9);
+    color: white;
+}
+
+/* --------------Services------------------ */
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1rem;
+    margin: 10rem;
+
+}
+.services-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgb(0, 0, 0, 0.1);
+}
+.services-container .box .box-img{
+    width: 100%;
+    height: 200px;
+}
+.services-container .box .box-img img{
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
+    object-fit: cover ;
+    object-position: center;
+}
+.services-container .box p{
+    padding: 0 10px;
+    border: 1px solid rgb(31, 30, 29);
+    width: 90px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+.services-container .box h3{
+    font-weight: 500;
+}
+.services-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: orange;
+    margin: 0.2rem 0 0.5rem;
+}
+.services-container .box h2 span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: blue;
+}
+.services-container .box .btn{
+    display: flex;
+    justify-content: center;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.services-container .box .btn:hover{
+    background: orange;
+    color: white;
+}
+
+/* --------------About------------------ */
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    background: white;
+    color: black;
+    /* box-shadow: 10px 10px 10px rgb(29, 28, 28); */
+    margin-left:5% ;
+    margin-right: 5%;
+}
+.about-img img{
+    width: 100%;   
+}
+.about-text span{
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    color: orange; 
+    padding-left: 50%;
+}
+.about-text p{
+    margin: 0.1rem 0 1rem;
+    padding-left: 70px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* --------------Reviews------------------ */
+
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1rem;
+    margin: 2rem;
+}
+.rev-img{
+    width: 70px;
+    height: 70px;
+}
+.rev-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid orange;
+}
+.reviews-container .box{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 1px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+.reviews-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+.reviews-container .box p{
+    font-style: italic;
+}
+.reviews-container .box .stars{
+    color: orange;
+}
+
+/* --------------NewsLetter------------------ */
+
+.newsletter{
+    background:rgb(33, 32, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    padding: 3%;
+}
+.newsletter h2{
+    color: white;
+    font-size: 1.7rem;
+}
+.newsletter .box{
+    margin: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 4px 8px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter .box input{
+    border: none;
+    outline: none;
+}
+.newsletter .box .btn{
+    background: blue;
+    color: white;
+    padding: 5px 15px;
+    font-size: small;
+    border-radius:0.5rem ;
+}
+
+/* --------------Copyright------------------ */
+
+.copyright {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    color :white;
+    background: rgb(33, 32, 31);
+    padding: 2%;
+}
+.social a{
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+.social a:hover{
+    color: blue;
+}
+.copyright .btc{
+    width: 80px;
+}
+.copyright .spc{
+    width: 170px;
+}
+/* responsive design */
+
+@media(max-width:991px){
+    header{
+        padding: 18px 40px;
+    }
+    section{
+          padding: 50px 40px;
+    }
+}
+@media(max-width:881px){
+    .home{
+        background-position: left;
+    }
+    .form-container form{
+          bottom: 0.2rem;
+          left: 40px;
+    }
+}
+@media(max-width:831px){
+    header{
+        padding: 11px 40px;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .sign-up{
+        display: none;
+    }
+    .text h2{
+        font-size: 2.5rem;
+    }
+    .home{
+        grid-template-columns: 1fr;
+    }
+    .form-container form{
+        position: unset;
+    }
+    header .navbar{
+        position: absolute;
+        top :-500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background:white;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        transition: 0.2s ease;
+        text-align: left;
+    }
+    .navbar .active{
+        top: 100%;
+    }
+    .navbar a{
+        padding: 1rem;
+        border-left: 2px solid orange;
+        margin: 1rem;
+        display: block;
+    }
+    .navbar a:hover{
+        color: white;
+        background: orange;
+        border: none;
+    }
+    .navbar a::after{
+        display: none;
+    }
+    .heading span{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .heading h1{
+        font-size: 1.3rem;
+    }
+    .about-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-img{
+        padding: 1rem;
+        order: 2;
+    }
+}
+@media(max-width:568px){
+      .copyright{
+          flex-direction: column;
+          width: 100%;
+      }
+      .newsletter .box{
+          width: 100%;
+      }
+}
+@media(max-width:375px),(max-height:667){
+    header{
+        padding: 16px 100px;
+    }
+    .logo img{
+        width: 40px;
+    }
+    section{
+        padding: 50px 14px;
+        
+    }
+    .home{
+         width: 100%;
+         display: none;
+    }
+}
+
+
+
+@media(max-width:375px){
+    
+}
